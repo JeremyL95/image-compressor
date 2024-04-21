@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Compressor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <img id="imageDisplay" class="preview-image" src="" alt="">
+            <input type="file" accept="image/*" hidden />
+            <i class="fa-solid fa-upload"></i>
+            <p>Browse File To Upload</p>
+        </div>
+
+        <div class="config-box">
+            <div class="row measurement-container">
+                <div class="column measurement width">
+                    <label for="">Width :</label>
+                    <input type="number">
+                </div>
+
+                <div class="column measurement height">
+                    <label for="">Height :</label>
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="row setting-container">
+                <div class="column setting ratio">
+                    <input id="ratio" type="checkbox" checked>
+                    <label for="ratio">Lock aspect ratio</label>
+                </div>
+
+                <div class="column setting height">
+                    <input id="quality" type="checkbox">
+                    <label for="quality">Reduce quality</label>
+                </div>
+            </div>
+
+            <button class="btn-download">Download Image</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
